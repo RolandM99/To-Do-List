@@ -1,3 +1,3 @@
-# setUp-webpack-boilerplate
+# TO-DO List
 
-In this project we build a simple and powerful webpack boilerplate, which we can later use as a starting point in all your JS projects
+"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
