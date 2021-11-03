@@ -30,5 +30,5 @@ myTasks.forEach((element) => {
   <p contenteditable="true">${element.description}</p>
   <span class="material-icons more-info">more_vert</span>
 </li>`;
-document.querySelector('body > main > section > div.input-container > div > ul').appendChild(myTodoView);
+  document.querySelector('body > main > section > div.input-container > div > ul').appendChild(myTodoView);
 });

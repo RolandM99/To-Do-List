@@ -22,11 +22,10 @@ body {
 }
 
 .app-title {
-  margin-left: 8px;
+  margin-left: 2px;
   color: #545862;
   font-size: 15px;
   font-weight: 400;
-  padding: 1rem;
   line-height: 20px;
 }
 
@@ -65,6 +64,7 @@ p {
   word-wrap: break-word;
   font-weight: 200;
   font-size: 15px;
+  text-align: left;
 }
 
 .add-todo-btn {
@@ -82,7 +82,7 @@ p {
   padding-inline-start: 0;
 }
 
-todo-view li {
+li {
   width: 100%;
   display: flex;
   flex-direction: row;
