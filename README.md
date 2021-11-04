@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[the project will be deployed once complete](https://livedemo.com)
+[live link](https://rolandm99.github.io/To-Do-List/)
 
 
 ## Getting Started
