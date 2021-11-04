@@ -72,7 +72,7 @@ p {
 .add-todo-btn {
   margin-left: -40px;
   border: none;
-  background-color: #fff;
+  background-color: #0000;
   cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ li {
 }
 
 .more-info {
-  cursor: move;
+  cursor: pointer;
 }
 
 .update-status {
@@ -125,6 +125,7 @@ li {
 .delete-btn {
   background-color: rgb(207, 207, 207);
   border: none;
+  cursor: pointer;
   font-size: 15px;
   color: #545862;
 }
