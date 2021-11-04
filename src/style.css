@@ -31,6 +31,7 @@ body {
 
 .icon-refresh {
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .header-container {
@@ -51,6 +52,7 @@ body {
   line-height: 50px;
   border: none;
   font-style: italic;
+  font-size: 15px;
   width: 99%;
   height: 45px;
   border-bottom: 1px solid rgb(207, 207, 207);
@@ -71,6 +73,7 @@ p {
   margin-left: -40px;
   border: none;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .items-list {
@@ -93,6 +96,23 @@ li {
 .material-icons {
   display: flex;
   align-items: center;
+  color: rgb(85, 85, 85);
+}
+
+.more-info {
+  cursor: move;
+}
+
+.update-status {
+  cursor: context-menu;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.update-status.done {
+  color: dodgerblue !important;
 }
 
 .footer-btn {
