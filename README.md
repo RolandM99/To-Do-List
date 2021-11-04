@@ -20,7 +20,7 @@
 
 To get a local copy up and running follow these simple example steps.
 
-1. First clone the project with the command git clone https://github.com/RolandM99/Capstone-Conference_page.git
+1. First clone the project with the command git clone https://github.com/RolandM99/To-Do-List.git
 2. Then run the command npm install in your terminal to open the project in your browser
 3. [optional] You can even fork the project
 
