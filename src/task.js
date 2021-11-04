@@ -4,28 +4,7 @@ export default class Tasks {
     if (myTask) {
       this.items = myTask;
     } else {
-      this.items = [
-        {
-          description: 'Complete my TO-DO-List project',
-          completed: false,
-          index: 1,
-        },
-        {
-          description: 'cook my food for tonight',
-          completed: false,
-          index: 2,
-        },
-        {
-          description: 'Read OOP in Java for preparation of tuesday Quiz',
-          completed: false,
-          index: 3,
-        },
-        {
-          description: 'Relax with a Netflix movie THE HATE WE GIVE',
-          completed: false,
-          index: 4,
-        },
-      ];
+      this.items = [];
     }
   }
 
@@ -42,7 +21,7 @@ export default class Tasks {
         listElement += `<span class="material-icons update-status" data-id="${element.index}">check_box_outline_blank</span>
     <p  class="activity" data-id="${element.index}" contenteditable="true">${element.description}</p>`;
       }
-      listElement += `<span class="material-icons more-info">more_vert</span>
+      listElement += `<span class="material-icons more-info delete-item" data-id="${element.index}">delete</span>
     </li>`;
       listTask.innerHTML += listElement;
     });
@@ -73,6 +52,33 @@ export default class Tasks {
     localStorage.setItem('list', JSON.stringify(this.items));
   }
 
+  addTask(text) {
+    this.items.push({
+      description: text,
+      completed: false,
+      index: this.items.length,
+    });
+    this.myTasksView();
+  }
+
+  editTask(element, index) {
+    this.items[index - 1].description = element;
+    this.serveItems();
+  }
+
+  clearAllCompleted() {
+    // The filter() method creates a new array with all elements
+    // that pass the test implemented by the provided function
+    const clearItems = this.items.filter((list) => list.completed === false);
+    this.items = clearItems;
+    this.myTasksView();
+  }
+
+  deleteTask(index) {
+    this.items.splice(index - 1, 1);
+    this.myTasksView();
+  }
+
   eventStatus() {
     const status = document.querySelectorAll('.update-status');
     status.forEach((element) => {
@@ -89,6 +95,23 @@ export default class Tasks {
           el.target.classList.add('done');
         }
         this.myTasksView();
+      });
+    });
+
+    const removeTaskBtn = document.querySelectorAll('.delete-item');
+    removeTaskBtn.forEach((element) => {
+      element.addEventListener('click', (e) => {
+        const index = e.target.getAttribute('data-id');
+        this.deleteTask(index);
+      });
+    });
+
+    const clickEdit = document.querySelectorAll('.activity');
+    clickEdit.forEach((activity) => {
+      activity.addEventListener('input', (e) => {
+        const index = e.target.getAttribute('data-id');
+        const newText = e.target.innerText;
+        this.editTask(newText, index);
       });
     });
   }
