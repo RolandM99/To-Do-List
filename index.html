@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"/>
+    <title>To Do List</title>
+<script defer src="/To-Do-List/main.js"></script></head>
+<body>
+    <main class="main-class">
+        <section class="main-container">
+            <div class="header-container">
+                <h1 class="app-title">Today's Tasks</h1>
+                <span class="icon-refresh"><i class="far fa-sync-alt"></i></span>
+            </div>
+            <div class="input-container">
+                <form id="form-input">
+                    <input name="text" placeholder="Add to your list..." id="todo-input">
+                    <button class="add-todo-btn" type="submit"><i class="fad fa-hand-point-left"></i></button>
+                </form>
+                <div class="todo-list">
+                    <ul class="items-list">
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-btn">
+                <button type="button" class="delete-btn">clear all completed</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
