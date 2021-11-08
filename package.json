@@ -1,7 +1,7 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "To-Do-List",
   "version": "1.0.0",
-  "description": "In this project we build a simple and powerful webpack boilerplate, which we can later use as a starting point in all your JS projects",
+  "description": "To-do list is a tool that helps to organize your day.",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RolandM99/setUp-webpack-boilerplate.git"
+    "url": "https://github.com/RolandM99/To-Do-List.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Roland Mweze",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RolandM99/setUp-webpack-boilerplate/issues"
+    "url": "https://github.com/RolandM99/To-Do-List/issues"
   },
-  "homepage": "https://github.com/RolandM99/setUp-webpack-boilerplate#readme",
+  "homepage": "https://github.com/RolandM99/To-Do-List#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.5.0",
