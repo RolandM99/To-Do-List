@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[live link](https://rolandm99.github.io/To-Do-List/)
+[Netlify live link](https://todolist-by-rolandm.netlify.app/)
 
 
 ## Getting Started
